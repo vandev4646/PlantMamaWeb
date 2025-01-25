@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Mama Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img
+            id="logo-pic"
+            src="Images/PlantMamaIcon2.png"
+            alt="Plant Mama Icon"
+            style="width: 100px; height: 100px; vertical-align: middle"
+          />
+          Plant Mama</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#download__info" class="navbar__links">Download</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about__info" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact__info" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1 id="top__text">An App That.....</h1>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="Images/Plant Mama.png" />
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slide__Text">
+          <h2 id="slide__info">Screenshots From The App</h2>
+        </div>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="Images/Screenshot_1.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="Images/Screenshot_2.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="Images/Screenshot_3.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="Images/Screenshot_4.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div class="header__container">
+          <h1 id="download__info">Download The App</h1>
+          <p>
+            Plant Mama is available for download from the Google Play Store. An
+            iOS version is coming soon.
+          </p>
+        </div>
+        <div class="download__container">
+          <div class="qr__content">
+            <h2>Scan the QR</h2>
+          </div>
+          <div class="btn__content">
+            <h2>Or..... Click Here to Download</h2>
+          </div>
+        </div>
+
+        <div class="download__container">
+          <div class="qr__content">
+            <img
+              id="qr__image"
+              src="Images/download_qr.png"
+              style="width: 100%"
+            />
+          </div>
+          <div class="btn__content">
+            <button onclick="openLink()">Download Now</button>
+          </div>
+        </div>
+
+        <h1 id="about__info">About</h1>
+        <p>
+          This app was started as fun project to learn moblie application
+          development. More features and improvments are planned for the future.
+        </p>
+
+        <div class="contact__container">
+          <h1 id="contact__info">Contact</h1>
+          <p>
+            I would love to hear from you. Have an additon you would like to
+            see? Found a bug? Please email me.
+          </p>
+          <button onclick="sendEmail()">Email</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
