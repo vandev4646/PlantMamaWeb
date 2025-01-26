@@ -49,7 +49,7 @@ function showSlides2(n) {
 }
 
 function sendEmail() { 
-  window.location.href = "mailto:v.c.elzen@gmail.com?subject=Subject&body=Body%20Content"; 
+  window.location.href = "mailto:v.c.elzen@gmail.com"; 
 }
 
 function openLink() { window.location.href = "https://play.google.com/store/apps/details?id=com.plantmamaapp_v3"; }
